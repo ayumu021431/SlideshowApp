@@ -15,6 +15,10 @@
 		14B422C5245301B90047E494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B422C3245301B90047E494 /* LaunchScreen.storyboard */; };
 		14B422D0245301B90047E494 /* SlideshowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B422CF245301B90047E494 /* SlideshowAppTests.swift */; };
 		14B422DB245301B90047E494 /* SlideshowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B422DA245301B90047E494 /* SlideshowAppUITests.swift */; };
+		14B422ED245325890047E494 /* IMG_8642.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14B422EA245325890047E494 /* IMG_8642.jpg */; };
+		14B422EE245325890047E494 /* IMG_8582.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14B422EB245325890047E494 /* IMG_8582.jpg */; };
+		14B422EF245325890047E494 /* IMG_8612.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14B422EC245325890047E494 /* IMG_8612.jpg */; };
+		14B4D6F02456FD9100629911 /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D6EF2456FD9100629911 /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		14B422D6245301B90047E494 /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B422DA245301B90047E494 /* SlideshowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowAppUITests.swift; sourceTree = "<group>"; };
 		14B422DC245301B90047E494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B422EA245325890047E494 /* IMG_8642.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8642.jpg; sourceTree = "<group>"; };
+		14B422EB245325890047E494 /* IMG_8582.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8582.jpg; sourceTree = "<group>"; };
+		14B422EC245325890047E494 /* IMG_8612.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8612.jpg; sourceTree = "<group>"; };
+		14B4D6EF2456FD9100629911 /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,9 @@
 		14B422AC245301B80047E494 = {
 			isa = PBXGroup;
 			children = (
+				14B422EB245325890047E494 /* IMG_8582.jpg */,
+				14B422EC245325890047E494 /* IMG_8612.jpg */,
+				14B422EA245325890047E494 /* IMG_8642.jpg */,
 				14B422B7245301B80047E494 /* SlideshowApp */,
 				14B422CE245301B90047E494 /* SlideshowAppTests */,
 				14B422D9245301B90047E494 /* SlideshowAppUITests */,
@@ -102,6 +113,7 @@
 				14B422B8245301B80047E494 /* AppDelegate.swift */,
 				14B422BA245301B80047E494 /* SceneDelegate.swift */,
 				14B422BC245301B80047E494 /* ViewController.swift */,
+				14B4D6EF2456FD9100629911 /* ZoomViewController.swift */,
 				14B422BE245301B80047E494 /* Main.storyboard */,
 				14B422C1245301B90047E494 /* Assets.xcassets */,
 				14B422C3245301B90047E494 /* LaunchScreen.storyboard */,
@@ -234,7 +246,10 @@
 			files = (
 				14B422C5245301B90047E494 /* LaunchScreen.storyboard in Resources */,
 				14B422C2245301B90047E494 /* Assets.xcassets in Resources */,
+				14B422EF245325890047E494 /* IMG_8612.jpg in Resources */,
 				14B422C0245301B80047E494 /* Main.storyboard in Resources */,
+				14B422ED245325890047E494 /* IMG_8642.jpg in Resources */,
+				14B422EE245325890047E494 /* IMG_8582.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B422BD245301B80047E494 /* ViewController.swift in Sources */,
+				14B4D6F02456FD9100629911 /* ZoomViewController.swift in Sources */,
 				14B422B9245301B80047E494 /* AppDelegate.swift in Sources */,
 				14B422BB245301B80047E494 /* SceneDelegate.swift in Sources */,
 			);
