@@ -27,6 +27,7 @@ class ZoomViewController: UIViewController {
     // 戻る
     @IBAction func backBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        
     }
     
 

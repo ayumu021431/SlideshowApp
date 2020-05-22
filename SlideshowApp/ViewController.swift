@@ -32,7 +32,9 @@ class ViewController: UIViewController {
     
     // 遷移元から遷移先にデータ(画像)を渡す
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if self.timer != nil {
+        self.timer.invalidate()
+        }
            // segueから遷移先のResultViewControllerのインスタンスを取得する
            let zoomInViewController:ZoomViewController = segue.destination as! ZoomViewController
          // 表示している画像の番号から名前を取り出し
@@ -69,11 +71,11 @@ class ViewController: UIViewController {
             nextButton.isEnabled = true
             backButton.isEnabled = true
             // ボタンの名前を再生とする
-            switchButton.setTitle("再生", for: .normal)
+            switchButton.setTitle("再生/停止", for: .normal)
             // 背景色・ボタン内テキストサイズを戻す
             self.view.backgroundColor = UIColor.white
             switchButton.titleLabel?.font =
-            UIFont.systemFont(ofSize: 20)
+            UIFont.systemFont(ofSize: 15)
         }
     }
     //進むボタン
