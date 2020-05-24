@@ -33,7 +33,18 @@ class ViewController: UIViewController {
     // 遷移元から遷移先にデータ(画像)を渡す
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if self.timer != nil {
-        self.timer.invalidate()
+            self.timer.invalidate()
+            self.timer = nil
+            switchButton.setTitle("再生", for: .normal)
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
+            
+            // 背景色・ボタン内テキストサイズを戻す
+            self.view.backgroundColor = UIColor.white
+            switchButton.titleLabel?.font =
+            UIFont.systemFont(ofSize: 20)
+            
+            
         }
            // segueから遷移先のResultViewControllerのインスタンスを取得する
            let zoomInViewController:ZoomViewController = segue.destination as! ZoomViewController
@@ -41,12 +52,9 @@ class ViewController: UIViewController {
                 let name = imageNameArray[displayImagenumber]
                 // 画像を読み込み
                 let image = UIImage(named: name)
-                
         // 遷移先のZoomInViewControllerで宣言しているselectedImgに値を代入して渡す
                 zoomInViewController.selectedImg = image
     }
-        
- 
     
     //再生・停止ボタン
     @IBAction func switchButtonTap(_ sender: Any) {
@@ -58,7 +66,7 @@ class ViewController: UIViewController {
             nextButton.isEnabled = false
             backButton.isEnabled = false
             // ボタンの名前を再生とする
-            switchButton.setTitle("再生", for: .normal)
+            switchButton.setTitle("停止", for: .normal)
             // 背景色・ボタン内テキストサイズを戻す
             self.view.backgroundColor = UIColor.white
             switchButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
@@ -71,11 +79,11 @@ class ViewController: UIViewController {
             nextButton.isEnabled = true
             backButton.isEnabled = true
             // ボタンの名前を再生とする
-            switchButton.setTitle("再生/停止", for: .normal)
+            switchButton.setTitle("再生", for: .normal)
             // 背景色・ボタン内テキストサイズを戻す
             self.view.backgroundColor = UIColor.white
             switchButton.titleLabel?.font =
-            UIFont.systemFont(ofSize: 15)
+            UIFont.systemFont(ofSize: 20)
         }
     }
     //進むボタン

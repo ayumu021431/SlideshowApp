@@ -32,7 +32,8 @@
                                     <constraint firstAttribute="width" constant="66" id="QZU-xf-BqO"/>
                                     <constraint firstAttribute="height" constant="30" id="uC5-2g-qQb"/>
                                 </constraints>
-                                <state key="normal" title="再生/停止"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="switchButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kwf-On-Upy"/>
                                 </connections>
